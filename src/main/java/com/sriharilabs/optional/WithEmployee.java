@@ -27,7 +27,7 @@ public class WithEmployee {
 		Optional<Employee> opt=Optional.of(emp.new Employee());
 		
 		Optional<String> ss=Optional.of("nothing");
-		//opt.ifPresent(e-> Optional.ofNullable(e.getName()).orElseGet("ss"));
+		opt.ifPresent(e-> System.out.println(Optional.ofNullable(e.getName()).orElse(ss)));
 		
 	}
 
